@@ -1,0 +1,174 @@
+.home
+	width: 100%
+	height: auto
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	margin-bottom: 150px
+	position: relative
+	&__title
+		width: 100%
+		text-align: center
+		overflow: hidden
+		padding-top: 0.1em
+		font-size:15em
+		font-family: 'Montserrat', sans-serif
+		font-weight: 800
+		&-text
+			pointer-events: none
+			display: inline-block
+			color: rgba(#E3E6EC, 1)
+			text-shadow: 5px 5px 10px rgba(#d1d0e6,0.9)
+	&__subtitle
+		max-width: 50%
+		margin-left: 25%
+		font-family: 'Montserrat', sans-serif
+		line-height: 1.5em
+		letter-spacing: 0.08em
+		color: rgba(lighten(#000, 40%), .4)
+		font-weight: 500
+		font-style: italic
+		margin-top: 2em
+		margin-bottom: 2em
+		display: inline-block
+	&__input-wrapper
+		height: auto
+		width: 100%
+		position: relative
+	&__input-inner
+		position: relative
+		margin: 80px auto 0
+		display: flex
+		justify-content: center
+	&__big-input
+		border: none
+		outline: none
+		// -webkit-box-shadow: 3px 8px 12px 3px rgba(0, 0, 0, 0.1)
+		// -moz-box-shadow: 3px 8px 12px 3px rgba(0, 0, 0, 0.1)
+		box-shadow: 8px 8px 30px 4px rgba(#d1d0e6, .9), -8px -8px 30px 4px rgba(#fff, .9), 
+		border-radius: 20px
+		width: 550px
+		height: 45px
+		padding: 0 2em
+		font-size: 1.1em
+		letter-spacing: 0.09em
+		transition: all .4s
+		margin-left: 80px
+		background: #E3E6EC
+		&::placeholder
+			opacity: 0.19
+		&:-ms-input-placeholder
+			opacity: 0.19
+		&::-ms-input-placeholder
+			opacity: 0.19
+		&:focus
+			box-shadow: 20px 20px 30px 4px rgba(#d1d0e6, .9), -20px -20px 30px 4px rgba(#fff, .9), 
+			transition: all .4s
+			background: #E6E9EF
+	&__bit-input-button
+		margin-left: 0	
+		background: #E6E9EF
+		border: none
+		outline: none
+		color: #999999
+		height: 44px
+		padding: 0 2em
+		font-size: 1em
+		border-radius: 20px
+		transition: all .35s
+		transform: translate(-100%, 0%)
+		font-weight: 500
+		box-shadow: -4px -4px 10px #FFFFFF, 5px 5px 10px #D1D9E6, 
+		&:active
+			transition: all .45s
+			box-shadow: inset -5px -5px 10px #FFFFFF,  inset 5px 5px 10px #D1D9E6,
+		&:hover
+			cursor: pointer
+			color: #353535
+			transition: all .35s
+		ion-icon
+			font-size: 1.2em
+			transform: translateY(15%)
+	&__suggestions
+		position: absolute
+		left: 50%
+		top: 80px
+		transform: translate(calc(-50% - 10px), 0)
+		overflow: hidden scroll
+		max-height: 250px
+		box-sizing: border-box
+		font-family: 'Montserrat', sans-serif
+		font-weight: 500
+		letter-spacing: 0.04em
+		z-index: 45
+	&__suggestions-list
+		margin: 0
+		padding: 0.5em 0 0.5em 0 
+		list-style-type: none
+		width: 550px
+		vertical-align: bottom
+		background: #E6E9EF
+		box-sizing: border-box
+	&__suggestions-item
+		display: block
+		width: auto
+		height: 50px
+		line-height: 50px
+		margin: 1em
+		padding: 0 2em 0 2em
+		transition: all .15s  linear
+		color: #858585
+		
+		&:hover
+			cursor: pointer
+			background: darken(#E6E9EF, 5%)
+			transition: all .15s linear
+	.card-grid
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		gap: 60px
+		padding: 5em 6% 0
+	&__ingredients-list 
+		list-style-type: none
+		display: block
+		max-width: 50%
+		margin: 50px 25%
+	&__ingredients-item
+		font-family: 'Montserrat', sans-serif
+		font-weight: 500
+		color: #999999
+		display: inline-block
+		padding: 0.5em 0.6em
+		box-sizing: border-box
+		background: #E6E9EF
+		border-radius: 1em
+		box-shadow: 4px 4px 20px 2px rgba(#d1d0e6, .4), -4px -4px 30px 2px rgba(#fff, .4),
+		margin: 0.5em 0.5em 0.5em 0.5em
+		transition: all .4s
+		transform: scale(0)
+		&:hover 
+			cursor: pointer
+		&-icon
+			margin-left: 0.5em
+			ion-icon
+				transform: translateY(21%)
+	&__ingredients-item::selection
+			background-color: #E6E9EF !important
+			opacity: 0 !important
+	&__ingredients-item::-moz-selection
+			background-color: #E6E9EF !important
+			opacity: 0 !important
+	&__notfound
+		width: 100%
+		text-align: center
+		font-family: 'Monserrat', sans-serif
+		color: #353535
+		margin-top: 12em
+	&__notfound-title
+		letter-spacing: 0.04em
+	&__notfound-icon
+		font-size: 2em
+	&__notfound-text
+		font-size: 0.95em
+		line-height: 1.5em
+		letter-spacing: 0.04em

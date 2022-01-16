@@ -1,0 +1,219 @@
+.card
+	width: 100%
+	height: auto
+	height: 710px
+	background: rgba(#E6E9EF, .3)
+	overflow: hidden
+	border-radius: 10px
+	box-shadow: 8px 8px 20px 4px rgba(#d1d0e6, .7), -8px -8px 20px 4px rgba(#fff, .7),
+	margin-top: 4em
+	font-family: 'Montserrat', sans-serif
+	box-sizing: border-box
+	transition: all .25s ease-out
+	position: relative
+	&:hover
+		box-shadow: 8px 8px 40px 5px rgba(#d1d0e6, .9), -8px -8px 40px 5px rgba(#fff, .9),
+		transition: all .25s ease-in
+	&__image-wrap
+		max-width: 100%
+		height: 220px
+		overflow: hidden
+		position: relative
+		transition: all 0.4s
+		&:hover
+			height: 340px
+			transition: all 0.4s
+			cursor: pointer
+			.card__interaction-wrap
+				opacity: 1
+				transition: all .4s
+				.card__save
+					margin-right: 1.5em
+					transition: all .4s
+					
+				.card__like
+					margin-left: 1.5em
+					transition: all .4s
+		img
+			max-width: 100%
+	&__info-wrap
+		padding: 4em 3em 4em
+
+	&__title
+		font-size: 2em
+		font-weight: 700
+
+	&__subtitle
+
+		color: rgba(#000, .3)
+		letter-spacing: 0.04em
+		font-size: 0.9em
+		font-weight: 600
+		margin-top: 0.75em
+	&__info-inner
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		margin-top: 3em
+		font-size: 0.9em
+		font-weight: 500
+		color: rgba(#000, .4)
+	&__prep
+	&__cook
+		margin-left: 1em
+	&__over
+		margin-left: 1em
+	&__tabs-inner
+		margin-top: 5em
+
+	&__tab-nav-ingredients
+		display: inline-block
+		font-size: 1em
+		margin-left: 0
+	&__tab-nav-directions
+		display: inline-block
+		margin-left: 0.9em
+		font-size: 1em
+	&__tab-nav-nutrition
+		display: inline-block
+		margin-left: 0.9em
+		font-size: 1em
+	&__tab-nav
+		background: transparent
+		border: none
+		outline: none
+		color: rgba(#000, .45)
+		font-weight: 500
+		letter-spacing: 0.04em
+		padding: 0.4em 0.5em
+		transition: all .45s
+		text-transform: lowercase
+		border-radius: 1em
+		&:hover
+			cursor: pointer
+			color: #000
+			transition: all .45s
+		&--active
+			color: #fff
+			background: crimson
+			
+			&:hover
+				color: #fff
+	&__tab-ingredients
+		font-style: italic
+		word-spacing: 0.1em
+		text-overflow: ellipsis
+		overflow: hidden
+		white-space: normal
+		display: -webkit-box !important
+		-webkit-line-clamp: 3
+		-webkit-box-orient: vertical
+		color: #555555
+		letter-spacing: 0.04em
+		font-style: italic
+		font-size: 0.9em
+		margin-top: 1em
+		line-height: 1.35em
+	&__tab-description
+		text-overflow: ellipsis
+		overflow: hidden
+		white-space: normal
+		display: -webkit-box !important
+		-webkit-line-clamp: 2
+		-webkit-box-orient: vertical
+		line-height: 1.35em
+		font-size: 0.9em
+		padding-bottom: 0.3em
+		color: #555555
+		letter-spacing: 0.04em
+		font-style: italic
+		margin-top: 1em
+	&__tab-nutrition
+		text-overflow: ellipsis
+		overflow: hidden
+		white-space: normal
+		display: -webkit-box !important
+		-webkit-line-clamp: 3
+		-webkit-box-orient: vertical
+		padding-bottom: 0.3em
+		color: #555555
+		letter-spacing: 0.04em
+		font-style: italic
+		font-size: 0.9em
+		margin-top: 1em
+		line-height: 1.35em
+		p
+			display: inline-block
+			span 
+				font-weight: 600
+				margin-right: 0.8em
+	&__interaction-wrap
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		opacity: 0
+	&__save
+		display: inline-block
+		margin-right: 3em
+		transition: all .5s
+		button
+			border-radius: 50%
+			width: 50px
+			height: 50px
+			background: crimson
+			border: none
+			outline: none
+			color: #f8f8f8
+			transition: all .4s
+			&:active
+				transform: scale(0.9)
+			&:hover 
+				cursor: pointer
+				color: crimson
+				background: #fff
+			ion-icon
+				transform: translateY(20%)
+				font-size: 1.4em
+				transition: all .4s
+	&__like
+		display: inline-block
+		margin-left: 3em
+		transition: all .5s
+		button
+			border-radius: 50%
+			width: 50px
+			height: 50px
+			background: crimson
+			border: none
+			outline: none
+			color: #f8f8f8
+			transition: all .4s
+			&:active
+				transform: scale(0.9)
+			&:hover 
+				cursor: pointer
+				color: crimson
+				background: #fff
+			ion-icon
+				transform: translateY(20%)
+				font-size: 1.4em
+				transition: all .4s
+	&-text
+		letter-spacing: 0.04em
+		font-size: 1em
+		display: block
+		font-weight: 600
+		color: #000
+		margin-top: 0.2em
+	&__shadow
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 200px
+		background: transparent
+		-webkit-box-shadow: 10px -100px 100px -20px rgba(150, 150, 150, 0.089) inset
+		-moz-box-shadow: 10px -100px 100px -20px rgba(150, 150, 150, 0.089) inset
+		box-shadow: 10px -100px 100px -20px rgba(150, 150, 150, 0.089) inset
+		pointer-events: none

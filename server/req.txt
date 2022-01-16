@@ -1,0 +1,15 @@
+{
+"name": "Lemon chicken",
+"img": "blabla/1.jpg",
+"author": "Andrew Solomon",
+"prep_time": "15 min",
+"cook_time": "1.5 hour",
+"serving": 8,
+"direction": "Your holiday menu is now (at least) half-planned—say hello to the centerpiece to end all centerpieces, this gorgeous, generous, stunning pork loin roast recipe! Surrounded by golden, roasted root vegetables and tender, meltingly sweet apples, this pork roast recipe is at once totally traditional and out-of-the-box. It’ll be a little unexpected at your holiday table, but familiar flavors and the inherent sheer festiveness of a whole pork roast make it all but certain that your friends and family will be happy diners! We’ve created this recipe to be easy on the cook—yay for that, especially this time of year—and easy for everyone (from 1 to 92) at the table to love. ",
+"ingredient": [{"name":"pork", "quantity": "1.5kg"}, {"name":"salt", "quantity": "2 tsp "}, {"name":"black pepper", "quantity": "1/2 tsp"}, {"name":"red onion", "quantity": "1"}, {"name":"large carrot", "quantity": "2"}, {"name":"patatoes", "quantity": "500g"}, {"name":"garlic", "quantity": "clove(s)"}, {"name":"thyme", "quantity": "1 Tbsp"}, {"name":"ground allspice", "quantity": "1/4 tsp"}, {"name":"olive oil", "quantity": "2 Tbsp"}, {"name":"black pepper", "quantity": "1/2 tsp"}, {"name":"chicken stock", "quantity": "1"}, {"name":"black pepper", "quantity": "1/2 tsp"}, {"name":"apple", "quantity": "1 large"}],
+"description": "Roasted with apples and root veggies and finished with a cider gravy, this moist, juicy pork loin roast recipe is as easy to make as it is festive to gather around!",
+"protein": 11,
+"fat": 12,
+"carbohydrate": 18,
+"calorie": 233
+}
